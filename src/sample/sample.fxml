@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane prefHeight="509.0" prefWidth="1055.0">
+         <children>
+            <Canvas fx:id="CanvasImage" height="478.0" layoutX="14.0" layoutY="14.0" width="799.0" />
+            <Button layoutX="825.0" layoutY="14.0" mnemonicParsing="false" onAction="#getImageAction" prefHeight="25.0" prefWidth="217.0" text="Выбрать изображение" />
+            <Button layoutX="825.0" layoutY="39.0" mnemonicParsing="false" onAction="#StartImageAction" prefHeight="25.0" prefWidth="217.0" text="Исходное изображение" />
+            <Button layoutX="825.0" layoutY="83.0" mnemonicParsing="false" onAction="#NoiseAction" prefHeight="25.0" prefWidth="217.0" text="Шум" />
+            <Button layoutX="825.0" layoutY="108.0" mnemonicParsing="false" onAction="#FigureAction" prefHeight="25.0" prefWidth="217.0" text="Линии и круги" />
+            <Button layoutX="825.0" layoutY="153.0" mnemonicParsing="false" onAction="#UniformAction" prefHeight="25.0" prefWidth="158.0" text="Равномерный" />
+            <Button layoutX="825.0" layoutY="178.0" mnemonicParsing="false" onAction="#GaussAction" prefHeight="25.0" prefWidth="158.0" text="Гаусса" />
+            <Button layoutX="825.0" layoutY="203.0" mnemonicParsing="false" onAction="#MedianAction" prefHeight="25.0" prefWidth="158.0" text="Медианный" />
+            <Button layoutX="825.0" layoutY="252.0" mnemonicParsing="false" onAction="#WaterColorAction" prefHeight="25.0" prefWidth="217.0" text="Акварелизация" />
+            <Button layoutX="825.0" layoutY="277.0" mnemonicParsing="false" onAction="#EmbossingAction" prefHeight="25.0" prefWidth="217.0" text="Тиснение" />
+            <Button layoutX="825.0" layoutY="300.0" mnemonicParsing="false" onAction="#WavesAction" prefHeight="25.0" prefWidth="217.0" text="Волны" />
+            <TextField fx:id="UniformNum" layoutX="997.0" layoutY="153.0" prefHeight="25.0" prefWidth="44.0" />
+            <TextField fx:id="GaussNum" layoutX="997.0" layoutY="178.0" prefHeight="25.0" prefWidth="44.0" />
+            <TextField fx:id="MedianNum" layoutX="997.0" layoutY="203.0" prefHeight="25.0" prefWidth="44.0" />
+         </children>
+      </Pane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
